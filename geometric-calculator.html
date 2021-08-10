@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/geometric-calculator.css">
     <title>Geometric Calculator</title>
 </head>
 <body>
     <header class="header">
         <h1>Geometric shape Calculator</h1>
     </header>
-    <section class="calculator">
-        <h2>Square area and perimeter Calculator</h2>
-        <form>
-            <label for="squareSide">
-                Side
-            </label>
-            <input id="squareSide" type="number">
-            <button type="button" onclick="calculateSquareArea()">Calculate Area</button>
-            <button type="button" onclick="calculateSquarePerimeter()">Calculate Perimeter</button>
-        </form>
+    <section class="containter">
+        <section class="calculator">
+            <h2 class="calculator__title">Square area and perimeter Calculator</h2>
+            <form class="calculator__form">
+                <label for="squareSide">
+                    Side
+                </label>
+                <input id="squareSide" type="number" class="calculator__input">
+                <button class="calculator__button" type="button" onclick="calculateSquarePerimeter()">Calculate Perimeter</button>
+                <button class="calculator__button" type="button" onclick="calculateSquareArea()">Calculate Area</button>
+            </form>
+        </section>
+        <section class="calculator">
+            <h2 class="calculator__title">Triangle area and perimeter Calculator</h2>
+            <form class="calculator__form">
+                <label for="triangleSide1">Side 1</label>
+                <input id="triangleSide1" type="number" class="calculator__input">
+                <label for="triangleSide2">Side 2</label>
+                <input id="triangleSide2" type="number" class="calculator__input">
+                <label for="triangleBase">Base</label>
+                <input id="triangleBase" type="number" class="calculator__input">
+                <label for="triangleHeight">Height</label>
+                <input id="triangleHeight" type="number" class="calculator__input">
+                <button class="calculator__button" type="button" onclick="calculateTrianglePerimeter()">Calculate Perimeter</button>
+                <button class="calculator__button" type="button" onclick="calculateTriangleArea()">Calculate Area</button>
+            </form>
+        </section>
     </section>
+    
+    
 </body>
-<script src="./script.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>
