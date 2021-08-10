@@ -15,9 +15,7 @@
         <section class="calculator">
             <h2 class="calculator__title">Square area and perimeter Calculator</h2>
             <form class="calculator__form">
-                <label for="squareSide">
-                    Side
-                </label>
+                <label for="squareSide">Insert side of the square</label>
                 <input id="squareSide" type="number" class="calculator__input">
                 <button class="calculator__button" type="button" onclick="calculateSquarePerimeter()">Calculate Perimeter</button>
                 <button class="calculator__button" type="button" onclick="calculateSquareArea()">Calculate Area</button>
@@ -26,16 +24,27 @@
         <section class="calculator">
             <h2 class="calculator__title">Triangle area and perimeter Calculator</h2>
             <form class="calculator__form">
-                <label for="triangleSide1">Side 1</label>
+                <label for="triangleSide1">Insert side 1 of the triangle</label>
                 <input id="triangleSide1" type="number" class="calculator__input">
-                <label for="triangleSide2">Side 2</label>
+                <label for="triangleSide2">Insert side 2 of the triangle</label>
                 <input id="triangleSide2" type="number" class="calculator__input">
-                <label for="triangleBase">Base</label>
+                <label for="triangleBase">Insert base of the triangle</label>
                 <input id="triangleBase" type="number" class="calculator__input">
-                <label for="triangleHeight">Height</label>
+                <label for="triangleHeight">Insert height of the triangle</label>
                 <input id="triangleHeight" type="number" class="calculator__input">
                 <button class="calculator__button" type="button" onclick="calculateTrianglePerimeter()">Calculate Perimeter</button>
                 <button class="calculator__button" type="button" onclick="calculateTriangleArea()">Calculate Area</button>
+            </form>
+        </section>
+        <section class="calculator">
+            <h2 class="calculator__title">Circle Area and Circumference Calculator</h2>
+            <form class="calculator__form">
+                <label for="CircleRadius">
+                    Insert radius of the circle
+                </label>
+                <input id="CircleRadius" type="number" class="calculator__input">
+                <button class="calculator__button" type="button" onclick="calculateCircleCircumference()">Calculate Circumference</button>
+                <button class="calculator__button" type="button" onclick="calculateCircleArea()">Calculate Area</button>
             </form>
         </section>
     </section>
