@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Geometric Calculator</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
+    <header class="header">
+        <h1>Geometric shape Calculator</h1>
+    </header>
+    <section class="calculator">
+        <h2>Square area and perimeter Calculator</h2>
+        <form>
+            <label for="squareSide">
+                Side
+            </label>
+            <input id="squareSide" type="number">
+            <button type="button" onclick="calculateSquareArea()">Calculate Area</button>
+            <button type="button" onclick="calculateSquarePerimeter()">Calculate Perimeter</button>
+        </form>
+    </section>
 </body>
-<script></script>
+<script src="./script.js"></script>
 </html>
