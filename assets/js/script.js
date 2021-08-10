@@ -35,3 +35,13 @@ function calculateTriangleArea() {
     return alert(triangleArea(Number(base), Number(height)));
 }
 
+function calculateCircleCircumference() {
+    let radius = (document.getElementById("CircleRadius")).value;
+    return alert(circleCircumference(Number(radius)));
+}
+
+function calculateCircleArea() {
+    let radius = (document.getElementById("CircleRadius")).value;
+    return alert(circleArea(Number(radius)));
+}
+
