@@ -7,6 +7,74 @@
 }
 
 body {
-    background-color: #FDEFEF;
+    background-color: #222831;
+    color: #FFD369;
     font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+}
+
+.header h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.calculator-containter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.calculator {
+    border: 1px solid #EEEEEE;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator__title {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.calculator__form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+}
+
+.calculator__input {
+    background-color: rgba(238, 238, 238, 0.9);
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    margin: 5px;
+    outline: none;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+.calculator__button {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    color: #222831;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 2px;
+    width: 50%;
+}
+
+.calculator__button:hover {
+    background-color: #FFD369;
+    border-color: #FFD369;
+    box-shadow: 1px 1px 4px #FFD369;
 }
