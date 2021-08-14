@@ -1,4 +1,4 @@
-// Arrow Functions
+// GEOMETRIC CALCULATOR SCRIPTS
 
 // Square
 const squarePerimeter = squareSide => squareSide * 4;
@@ -44,4 +44,18 @@ function calculateCircleArea() {
     let radius = (document.getElementById("CircleRadius")).value;
     return alert(circleArea(Number(radius)));
 }
+
+// END GEOMETRIC CALCULATOR
+
+// DICOUNT CALCULATOR SCRIPTS
+
+const priceWithDiscount = (priceProduct, discountPercentage) => (priceProduct * (100 - discountPercentage)) / 100;
+
+function calculatePriceDiscount() {
+    let price = (document.getElementById("priceProduct")).value;
+    let discount = (document.getElementById("discountPercentage")).value;
+    return alert(priceWithDiscount(Number(price), Number(discount)));
+}
+
+// END DISCOUNT CALCULATOR
 

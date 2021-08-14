@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Discounts Calculator</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Discounts Calculator</h1>
+    </header>
+    <section class="calculator-container">
+        <section class="calculator">
+            <h2 class="calculator__title">Price discount Calculator</h2>
+            <form class="calculator__form">
+                <label for="priceProduct">Insert the price of the product</label>
+                <input id="priceProduct" type="number" class="calculator__input">
+                <label for="discountPercentage">Insert the discount percentage</label>
+                <input id="discountPercentage" type="number" class="calculator__input">
+                <button class="calculator__button" type="button" onclick="calculatePriceDiscount()">Calculate</button>
+                <!-- <label for="squareSide">Result</label>
+                <input id="squareResult" type="number" class="calculator__input"> -->
+            </form>
+        </section>
+    </section>
+</body>
+    <script src="./assets/js/script.js"></script>
+</html>
