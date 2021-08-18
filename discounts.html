@@ -12,7 +12,7 @@
         <h1>Discounts Calculator</h1>
     </header>
     <section class="calculator-container">
-        <section class="calculator">
+        <section class="calculator discount">
             <h2 class="calculator__title">Price discount Calculator</h2>
             <form class="calculator__form">
                 <label for="priceProduct">Insert the price of the product</label>
@@ -20,9 +20,9 @@
                 <label for="discountPercentage">Insert the discount percentage</label>
                 <input id="discountPercentage" type="number" class="calculator__input">
                 <button class="calculator__button" type="button" onclick="calculatePriceDiscount()">Calculate</button>
-                <!-- <label for="squareSide">Result</label>
-                <input id="squareResult" type="number" class="calculator__input"> -->
+                
             </form>
+            <p id="resultPrice"></p>
         </section>
     </section>
 </body>

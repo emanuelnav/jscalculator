@@ -54,7 +54,9 @@ const priceWithDiscount = (priceProduct, discountPercentage) => (priceProduct * 
 function calculatePriceDiscount() {
     let price = (document.getElementById("priceProduct")).value;
     let discount = (document.getElementById("discountPercentage")).value;
-    return alert(priceWithDiscount(Number(price), Number(discount)));
+    let priceDiscount = priceWithDiscount(Number(price), Number(discount));
+    let resultPrice = document.getElementById("resultPrice");
+    resultPrice.innerText = "The price with discount is : $" + priceDiscount;
 }
 
 // END DISCOUNT CALCULATOR

@@ -35,6 +35,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba( 137, 128, 128, 0.40 );
+    box-shadow: 0 2px 12px 0 rgba(211, 186, 78, 0.37);
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.discount {
+    margin: auto;
 }
 
 .calculator__title {
