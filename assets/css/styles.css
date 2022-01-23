@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+/* General Style */
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +15,60 @@ body {
 }
 
 .header {
-    height: 200px;
+    height: 10rem;
     width: 100%;
 }
 
 .header h1 {
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
 }
+
+
+/* Index page Style */
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container__calculators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__calculators--button a {
+    text-decoration: none;
+    color: #222831;
+}
+.container__calculators--button {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    margin: 10px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Geometric calculator page style */
 
 .calculator-containter {
     display: flex;
@@ -83,8 +131,19 @@ body {
     width: 50%;
 }
 
-.calculator__button:hover {
+.calculator__button:hover, .container__calculators--button:hover {
     background-color: #FFD369;
     border-color: #FFD369;
     box-shadow: 1px 1px 4px #FFD369;
+}
+
+.back--button a {
+    color: #FFD369;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.back--button {
+    padding-top: 40px;
+    text-align: center;
 }
